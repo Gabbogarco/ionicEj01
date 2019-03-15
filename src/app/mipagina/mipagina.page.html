@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+  		<ion-buttons slot="start">
+  			<ion-back-button defaultHref="./tab1"></ion-back-button>
+  		</ion-buttons>
+    <ion-title>mipagina</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-thumbnail>
+  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+</ion-thumbnail>
+
+<ion-item *ngFor="let medico of Omedicos">
+	 <ion-label>{{medico.nombre}}</ion-label>
+  <ion-thumbnail slot="start" >
+    <img src={{medico.img}}>
+  </ion-thumbnail>
+ 
+</ion-item>
+
+</ion-content>
